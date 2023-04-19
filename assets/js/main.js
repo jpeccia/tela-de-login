@@ -45,7 +45,7 @@ function login() {
   });
 
   if (user.value == validUser.user && password.value == validUser.password) {
-    window.location.href = "../../index.html";
+    window.location.href = "https://jpeccia.github.io/tela-de-login/";
 
     let token =
       Math.random().toString(16).substr(2) +
@@ -63,5 +63,5 @@ function login() {
 function logout() {
   localStorage.removeItem("token");
   localStorage.removeItem("");
-  window.location.href = "./assets/html/login.html";
+  window.location.href = "https://jpeccia.github.io/tela-de-login/assets/html/login.html";
 }
