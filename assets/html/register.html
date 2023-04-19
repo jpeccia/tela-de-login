@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/style/style.css">
+
+    <title>Cadastre-se!</title>
+</head>
+<body>
+    <main id="container">
+        <div id="errorMsg" ></div>
+        <div id="sucessMsg"></div>
+        <form id="login_form">
+
+            <div id="backlogin">
+                <a href="/assets/html/./assets/html/login.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </div>
+        
+            <div id="form_header">
+                <h1>Register</h1>
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label id="labelName" for="name">
+                        Nome
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label id="labelUser" for="user">
+                        Usuário
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="user" name="user" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label id="labelEmail" for="email">
+                        E-mail
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label id="labelPassword" for="password">
+                        Senha (No minimo 6 caracteres)
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label id="labelConfirmPassword" for="password">
+                        Confirmar Senha
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button onclick="register()" type="button" id="login_button">
+                Cadastrar
+            </button>
+        </form>
+    </main>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.card {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rga(0, 0, 0, 0.336);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  #logout{
+    border: none;
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+  }
