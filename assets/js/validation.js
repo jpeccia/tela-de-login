@@ -99,7 +99,7 @@ function register() {
     errorMsg.innerHTML = "";
 
     setTimeout(() => {
-      window.location.href = "login.html";
+      window.location.href = "https://jpeccia.github.io/tela-de-login/assets/html/login.html";
     }, 3000);
   } else {
     errorMsg.setAttribute("style", "display: flex");
